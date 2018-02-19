@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CustomMessageContentView: UIView {
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var bottomView: UIView!
+public class CustomMessageContentView: UIView {
+    @IBOutlet public weak var imageView: UIImageView!
+    @IBOutlet public weak var bottomView: UIView!
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var codeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var shippingLabel: UILabel!
+    @IBOutlet public weak var nameLabel: UILabel!
+    @IBOutlet public weak var codeLabel: UILabel!
+    @IBOutlet public weak var descriptionLabel: UILabel!
+    @IBOutlet public weak var shippingLabel: UILabel!
 }
