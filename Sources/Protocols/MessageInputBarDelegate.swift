@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// MessageInputBarDelegate is a protocol that can recieve notifications from the MessageInputBar
 public protocol MessageInputBarDelegate: AnyObject {

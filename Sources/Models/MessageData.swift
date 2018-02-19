@@ -24,6 +24,7 @@
 
 import Foundation
 import class CoreLocation.CLLocation
+import UIKit
 
 /// An enum representing the kind of message and its underlying data.
 public enum MessageData {
@@ -58,8 +59,8 @@ public enum MessageData {
 //
 //    case system(String)
 //    
-//    case custom(Any)
-//    
+    case custom([String: Any])
+//
 //    case placeholder
 
 }

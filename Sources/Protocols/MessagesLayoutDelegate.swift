@@ -24,6 +24,7 @@
 
 import Foundation
 import AVFoundation
+import UIKit
 
 /// A protocol used by the `MessagesCollectionViewFlowLayout` object to determine
 /// the size and layout of a `MessageCollectionViewCell` and its contents.
@@ -154,6 +155,10 @@ public protocol MessagesLayoutDelegate: AnyObject {
     /// The default value returned by this method uses `AVMakeRect(aspectRatio:insideRect:)` with a bounding
     /// rect using the `maxWidth` and `.greatestFiniteMagnitude` for the height.
     func heightForMedia(message: MessageType, at indexPath: IndexPath, with maxWidth: CGFloat, in messagesCollectionView: MessagesCollectionView) -> CGFloat
+    
+    /// FOR CUSTOM VIEW - ChatCamp
+    func widthForImageInCustom(message: MessageType, at indexPath: IndexPath, with maxWidth: CGFloat, in messagesCollectionView: MessagesCollectionView) -> CGFloat
+    func heightForImageInCustom(message: MessageType, at indexPath: IndexPath, with maxWidth: CGFloat, in messagesCollectionView: MessagesCollectionView) -> CGFloat
 
     // MARK: - Location Messages
 

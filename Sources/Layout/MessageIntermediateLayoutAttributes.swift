@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// A intermediate context used to store recently calculated values used by
 /// the `MessagesCollectionViewFlowLayout` object to reduce redundant calculations.

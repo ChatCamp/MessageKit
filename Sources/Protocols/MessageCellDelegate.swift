@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// A protocol used by `MessageCollectionViewCell` subclasses to detect taps in the cell's contents.
 public protocol MessageCellDelegate: MessageLabelDelegate {

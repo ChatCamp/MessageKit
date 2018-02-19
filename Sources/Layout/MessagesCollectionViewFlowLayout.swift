@@ -442,6 +442,10 @@ private extension MessagesCollectionViewFlowLayout {
             let width = messagesLayoutDelegate.widthForLocation(message: message, at: indexPath, with: maxWidth, in: messagesCollectionView)
             let height = messagesLayoutDelegate.heightForLocation(message: message, at: indexPath, with: maxWidth, in: messagesCollectionView)
             messageContainerSize = CGSize(width: width, height: height)
+        case .custom:
+            let width = messagesLayoutDelegate.widthForImageInCustom(message: message, at: indexPath, with: maxWidth, in: messagesCollectionView)
+            let height = messagesLayoutDelegate.heightForImageInCustom(message: message, at: indexPath, with: maxWidth, in: messagesCollectionView) + CustomMessageCell.bottomViewHeight()
+            messageContainerSize = CGSize(width: width, height: height)
         }
         
         return messageContainerSize

@@ -23,6 +23,7 @@
  */
 
 import Foundation
+import UIKit
 
 /// Optional Cell Protocol to Simplify registration/cell type loading in a generic way
 public protocol CollectionViewReusable: AnyObject {
